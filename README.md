@@ -1,3 +1,4 @@
+#Disciplina 
+> Programaçao aplicada em C e C++
 # Professor: 
 > Vagner
-# Programaçao aplicada em C e C++
