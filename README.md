@@ -4,4 +4,4 @@
 > Vagner
 
 começaremos em C
-E depois em C++ com orientação a objeto.
+e depois em C++ com orientação a objeto.
