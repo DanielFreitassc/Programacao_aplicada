@@ -3,5 +3,5 @@
 # Professor: 
 > Vagner
 
-começaremos em C
+Começaremos em C
 e depois em C++ com orientação a objeto.
