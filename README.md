@@ -28,6 +28,8 @@ problemas simples e direto.
 - Defende um pensamento de
 programação mais voltado ao
 pensamento humano.
+___
+# Exemplo basico de programa em C
 ```
 #include <stdio.h>
 #define PI 3.14159
@@ -42,8 +44,12 @@ int main() {
       return 0;
 }
 ```
+___
+# Por utimo Vimos os Dados e tipo de Dados.
 # Aula 02
-xxxx
+- Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
+- Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
+- Mostrou a Indentação do [Python](https://www.w3schools.com/python/gloss_python_indentation.asp) e comparou com o [C]()
 # Topico 3
 xx
 # Topico 4
