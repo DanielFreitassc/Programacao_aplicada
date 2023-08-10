@@ -4,4 +4,6 @@
 
 Começaremos em C
 e depois em C++ com orientação a objeto.
-### Documentação: [C/C++](https://cplusplus.com/reference/)
+### Documentação1: [C/c++](https://www.w3schools.com/c/)
+### Documentação2: [C/C++](https://cplusplus.com/reference/)
+
