@@ -46,6 +46,38 @@ int main() {
 ```
 ___
 # Por ultimo Vimos os Dados e tipo de Dados.
+```
+         |DADOS|
+      ______|______
+     |             |
+     |             |
+  |Entrada|     |Saída|
+     |              |
+   __|              |
+|                   |
+|_ |scanf()|        |
+|_|getchar()|       |
+|_|fgets()|         |
+                    |
+____________________|
+|
+|_|printf()|
+|_|sprintf()|
+|_|fprintf()|
+|_|puts()|
+
+
+```
+```
+    |TIPOS DE DADOS|
+      ______|______
+     |             |
+     |             |
+  |Entrada|     |Saída|
+ 
+
+
+```
 # Aula 02
 - Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
