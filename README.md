@@ -6,4 +6,10 @@ Começaremos em C
 e depois em C++ com orientação a objeto.
 ### Documentação 1: [C/C++](https://www.w3schools.com/c/)
 ### Documentação 2: [C/C++](https://cplusplus.com/reference/)
-
+# Topico 1
+xx
+# Topico 2
+xx
+# Topico 3
+xx
+# Topico 4
