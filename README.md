@@ -1,14 +1,14 @@
 # Disciplina 
-> Programaçao aplicada em C e C++
+> Programaçao aplicada em ``C`` e ``C++``
 # Professor: [Vagner Rodrigues](https://github.com/professorvagner)
 
-Começaremos em C
+Começaremos em ``C``
 e depois em C++ com orientação a objeto.
 ### Documentação 1: [C/C++](https://www.w3schools.com/c/)
 ### Documentação 2: [C/C++](https://cplusplus.com/reference/)
 - [Aula 1](#Aula0-1)
 # Aula 01
-Resumo da primeira aula vimos que C é uma linguagem alto/médio nível,
+Resumo da primeira aula vimos que ``C`` é uma linguagem alto/médio nível,
 ## Características:
 - [Uso Geral;](https://arquivo.canaltech.com.br/software/c-a-linguagem-de-programacao-que-esta-em-tudo-o-que-voce-usa-19512/)
 - [Procedural;](https://pt.stackoverflow.com/questions/195069/o-que-%C3%A9-programa%C3%A7%C3%A3o-procedural-e-n%C3%A3o-procedural)
@@ -29,7 +29,7 @@ problemas simples e direto.
 programação mais voltado ao
 pensamento humano.
 ___
-# Exemplo basico de programa em C
+# Exemplo basico de programa em ``C``
 ```
 #include <stdio.h>
 #define PI 3.14159
@@ -45,7 +45,7 @@ int main() {
 }
 ```
 ___
-# Por utimo Vimos os Dados e tipo de Dados.
+# Por ultimo Vimos os Dados e tipo de Dados.
 # Aula 02
 - Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
