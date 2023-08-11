@@ -114,6 +114,7 @@ __________________|__________________
 |___>|Exp? Verdadeiro: Falso|        |
 |___>|Conversão|                     |
 |___>|(cast)variável|                |______________>|Gerenciamento de Memória|
+                                                     |       & -> * [] .      |
 
 ```
 # Aula 02
