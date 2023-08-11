@@ -136,6 +136,11 @@ _____|
 - Comparou as variaveis de ``C`` com as ``"variaveis"`` do ``Python``.
 - Vimos [Especificadores de formato](https://www.w3schools.com/c/c_variables.php), usamos no `printf()` o especificador `%` Para gerar o valor de uma variável.
 ```
+int => inteiros
+float => numeros com virgula
+char => caracteres
+```
+```
 int => %d ou %i
 float => %f
 char => %c
