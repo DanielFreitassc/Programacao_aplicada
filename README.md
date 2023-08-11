@@ -6,7 +6,6 @@ Começaremos em ``C``
 e depois em C++ com orientação a objeto.
 ### Documentação 1: [C/C++](https://www.w3schools.com/c/)
 ### Documentação 2: [C/C++](https://cplusplus.com/reference/)
-- [Aula 1](#Aula0-1)
 # Aula 01
 Resumo da primeira aula vimos que ``C`` é uma linguagem alto/médio nível,
 ## Características:
