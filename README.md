@@ -157,7 +157,7 @@ printf("%f\n", meuFloatNum);
 printf("%c\n", meuTexto);
 ```
 ```
-|Tipo de Dados| Tamanho	     |Descrição
+|Tipo de Dados  | Tamanho      |      Descrição
 |int	        | 2 or 4 bytes |      Armazena números inteiros, sem decimais.
 |float	        | 4 bytes      |      Armazena números fracionários, contendo um ou mais decimais.
 |double	        | 8 bytes      |      Armazena números fracionários, contendo um ou mais decimais. 
