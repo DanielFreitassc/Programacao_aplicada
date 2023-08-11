@@ -117,6 +117,19 @@ __________________|__________________
                                                      |       & -> * [] .      |
 
 ```
+```
+         |DADOS|
+      ______|______
+     |             |
+     |             |
+|Ponteiros|  |Alocação Dinâmica|
+     |
+_____|  
+|___>|Ponteiro para array|                 
+|___>|Ponteiro para string|
+|___>|Ponteiro para estrutura|
+|___>|Ponteiro como parâmetro de função|
+```
 # Aula 02
 - Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
