@@ -135,6 +135,6 @@ _____|
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
 - Mostrou a Indentação do [Python](https://www.w3schools.com/python/gloss_python_indentation.asp) e comparou com o [C](https://www.w3schools.com/c/)
 - Comparou as variaveis de ``C`` com as ``"variaveis"`` do ``Python``.
-# Topico 3
+# Aula 03
 xx
-# Topico 4
+# Aulda 04
