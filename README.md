@@ -163,6 +163,22 @@ printf("%c\n", meuTexto);
 |double	        | 8 bytes      |      Armazena números fracionários, contendo um ou mais decimais. 
 |char	        | 1 byte       |      Armazena um único caractere/letra/número ou valores ASCII.
 ```
+```
+Menor que: a < b
+Menor ou igual a: a <= b
+Maior que: a > b
+Maior ou igual a: a >= b
+Igual a a == b
+Diferente de: a != b
+```
+```
+Condicionais:
+Use if para especificar um bloco de código a ser executado, se uma condição especificada for true
+Use else para especificar um bloco de código a ser executado, se a mesma condição for false
+Use else if para especificar uma nova condição para testar, se a primeira condição for false
+Use switch para especificar muitos blocos alternativos de código a serem executados
+
+```
 # Aula 03
 xx
 # Aula 04
