@@ -73,9 +73,30 @@ ____________________|
       ______|______
      |             |
      |             |
-  |Entrada|     |Saída|
- 
-
+|Primitivos|   |Derivados|
+     |              |
+_____|              |
+|                   |
+|_|int|             |
+|_|char|            |
+|_|float|           |
+|_|double|          |
+                    |
+ _|short|    <------|<------|Modificadores|
+|_|long|     <------|<------|Modificadores|
+|_|signed|   <------|<------|Modificadores|
+|_|unsigned| <------|<------|Modificadores|
+|_|array|           |
+|_|struct|          |
+|_|union|           |
+|_|enum|            |
+                    |
+ ___________________|
+|
+|_|array|
+|_|struct|
+|_|union|
+|_|enum|
 
 ```
 # Aula 02
