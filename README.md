@@ -96,6 +96,26 @@ _____|              |
 |_|enum|
 
 ```
+```
+            |Operadores|
+                  |
+__________________|__________________
+|___>|Atribuição|                    |
+|___>|= += -= *= /= %= &= |= ^=|     |
+|___>|Aritméticos|                   |
+|___>|+ - * / % ++ --|               |
+|___>|Relacionais|                   |
+|___>|< <= > >= == |=|               |
+|___>|Lógicos|                       |
+|___>|&& || !|                       |
+|___>|Bit a Bit|                     |
+|___>|& | ~ ^ >> <<|                 |
+|___>|Condicional|                   |
+|___>|Exp? Verdadeiro: Falso|        |
+|___>|Conversão|                     |
+|___>|(cast)variável|                |______________>|Gerenciamento de Memória|
+
+```
 # Aula 02
 - Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
