@@ -86,10 +86,7 @@ _____|              |
 |_|long|     <------|<------|Modificadores|
 |_|signed|   <------|<------|Modificadores|
 |_|unsigned| <------|<------|Modificadores|
-|_|array|           |
-|_|struct|          |
-|_|union|           |
-|_|enum|            |
+                    |
                     |
  ___________________|
 |
