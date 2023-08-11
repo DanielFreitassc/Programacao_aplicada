@@ -134,6 +134,23 @@ _____|
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
 - Mostrou a Indentação do [Python](https://www.w3schools.com/python/gloss_python_indentation.asp) e comparou com o [C](https://www.w3schools.com/c/)
 - Comparou as variaveis de ``C`` com as ``"variaveis"`` do ``Python``.
+- Vimos [Especificadores de formato](https://www.w3schools.com/c/c_variables.php), usamos no `printf()` o especificador `%` Para gerar o valor de uma variável.
+```
+int => %d ou %i
+float => %f
+char => %c
+```
+```
+// Criar variaveis
+int meuNum = 15;            // Inteiro (número inteiro)
+float meuFloatNum = 5.99;   // Número de ponto flutuante
+char meuTexto = 'D';       // caractere
+
+// Print Variáveis
+printf("%d\n", meuNum);
+printf("%f\n", meuFloatNum);
+printf("%c\n", meuTexto);
+```
 # Aula 03
 xx
 # Aulda 04
