@@ -141,6 +141,7 @@ float => numeros com virgula
 char => caracteres
 ```
 ```
+string => %s
 int => %d ou %i
 float => %f
 char => %c
