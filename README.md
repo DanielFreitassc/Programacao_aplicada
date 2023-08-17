@@ -181,5 +181,38 @@ Use switch para especificar muitos blocos alternativos de código a serem execut
 
 ```
 # Aula 03
-xx
+Na aula 3 fizemos os seguintes codigos.
+```
+
+Disciplina Programação Aplicada
+Data: 17/08/2023
+Exemplo01: Entrada e Saída de Dados/Tipos de dados primitivos.
+
+
+#include <stdio.h>
+
+int main(void) {
+  int idade;
+  printf("Digite a sua idade: ");
+  scanf("%i",&idade); // Como se fosse input() da linguagem Python.
+  printf("O dobro da sua idade é de :%i", 2*idade);
+  return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+  float nota1,nota2,nota3,media;
+  printf("Digite a primeira nota: ");
+  scanf("%f",&nota1);
+  printf("Digite a segundnan nota: ");
+  scanf("%f",&nota2);
+  printf("Digite a segundnan nota: ");
+  scanf("%f",&nota3);
+  media =  (nota1 + nota2 + nota3)/3;
+  printf("A média das notas é %.2f", media);
+  return 0;
+}
+```
 # Aula 04
