@@ -268,7 +268,7 @@ printf("Valor double: \t%.8f\t\tTamanho %lu bytes(s).\n",doublePi,sizeof(doubleP
 return 0;
 }
 ```
-# Vimos tipos [primitivos e modificadores](https://linguagemc.com.br/tipos-de-dados-em-c/).
+# Em seguida vimos tipos [primitivos e modificadores](https://linguagemc.com.br/tipos-de-dados-em-c/).
 Palavra Chave | Tipo
 :--------- | :------:
 char|	caracter
