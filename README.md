@@ -1,5 +1,5 @@
 > Daniel Freitas
-<h1 align="center">Bem-Vindos Ao Meu Caderno De Anotações Vamos Em Uma Incrivel aventura Pelo Maravilhoso Mundo do C e C++! 🚀</h1>
+<h1 align="center">Bem-Vindos Ao Meu Caderno De Anotações Vamos Em Uma Incrivel Aventura Pelo Maravilhoso Mundo do C e C++! 🚀</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-blue.svg" alt="Languages: C | C++">
