@@ -46,7 +46,7 @@ Começaremos em ``C``
 e depois em C++ com orientação a objeto.
 ### Documentação 1: [C/C++](https://www.w3schools.com/c/)
 ### Documentação 2: [C/C++](https://cplusplus.com/reference/)
-# Aula 01
+# **Aula 01: Desvendando os Mistérios de C e C++ - Explorando os Fundamentos e Além! 🚀**
 Resumo da primeira aula vimos que ``C`` é uma linguagem alto/médio nível,
 ## Características:
 - [Uso Geral;](https://arquivo.canaltech.com.br/software/c-a-linguagem-de-programacao-que-esta-em-tudo-o-que-voce-usa-19512/)
@@ -169,7 +169,7 @@ _____|
 |___>|Ponteiro para estrutura|
 |___>|Ponteiro como parâmetro de função|
 ```
-# Aula 02
+# Aula 02: Comparando os Universos de C e C++ - Explorando Sintaxe, Variáveis e Especificadores! 🔍
 - Aula dois começamos vendo a diferença entre as duas linguagens o professor pediu para criarmos uma conta no [w3schools](https://www.w3schools.com/).
 - Em seguida pediu para que nós olharmos a Syntax do [C](https://www.w3schools.com/c/c_syntax.php)
 - Mostrou a Indentação do [Python](https://www.w3schools.com/python/gloss_python_indentation.asp) e comparou com o [C](https://www.w3schools.com/c/)
@@ -226,8 +226,9 @@ Use else if para especificar uma nova condição para testar, se a primeira cond
 Use switch para especificar muitos blocos alternativos de código a serem executados
 
 ```
-# Aula 03
-Na aula 3 fizemos uma conta no [Replit](https://replit.com) e em seguidas fizemos os seguintes codigos.
+# Aula 03: Explorando Entrada e Saída, Tipos de Dados e Modificadores - Mergulhando nas Bases da Programação! 📝
+Nesta aula começamos criando uma conta no [Replit](https://replit.com) criamos um repositorio e começamos a programar.
+
 ```
 Disciplina Programação Aplicada
 Data: 17/08/2023
