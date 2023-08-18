@@ -135,17 +135,20 @@ _____|
 - Mostrou a Indentação do [Python](https://www.w3schools.com/python/gloss_python_indentation.asp) e comparou com o [C](https://www.w3schools.com/c/)
 - Comparou as variaveis de ``C`` com as ``"variaveis"`` do ``Python``.
 - Vimos [Especificadores de formato](https://www.w3schools.com/c/c_variables.php), usamos no `printf()` o especificador `%` Para gerar o valor de uma variável.
-```
-int => inteiros
-float => numeros com virgula
-char => caracteres
-```
-```
-string => %s
-int => %d ou %i
-float => %f
-char => %c
-```
+
+Tipo|Oque é:
+:--------- | :--------- |
+int | inteiros
+float | numeros com virgula
+char | caracteres
+
+Tipo|especificador de formato
+:--------- | :--------- 
+string | %s
+int | %d ou %i
+float | %f
+char | %c
+
 ```
 // Criar variaveis
 int meuNum = 15;            // Inteiro (número inteiro)
@@ -157,21 +160,24 @@ printf("%d\n", meuNum);
 printf("%f\n", meuFloatNum);
 printf("%c\n", meuTexto);
 ```
-```
-|Tipo de Dados  | Tamanho      |      Descrição
-|int	        | 2 or 4 bytes |      Armazena números inteiros, sem decimais.
-|float	        | 4 bytes      |      Armazena números fracionários, contendo  6 casas decimais.
-|double	        | 8 bytes      |      Armazena números fracionários, contendo 15 casas decimais. 
-|char	        | 1 byte       |      Armazena um único caractere/letra/número ou valores ASCII.
-```
-```
-Menor que: a < b
-Menor ou igual a: a <= b
-Maior que: a > b
-Maior ou igual a: a >= b
-Igual a a == b
-Diferente de: a != b
-```
+
+Tipo de Dados  | Tamanho      |      Descrição
+:--------- | :--------- |:--------- |
+int	        | 2 or 4 bytes |      Armazena números inteiros, sem decimais.
+float	        | 4 bytes      |      Armazena números fracionários, contendo  6 casas decimais.
+double	        | 8 bytes      |      Armazena números fracionários, contendo 15 casas decimais. 
+char	        | 1 byte       |      Armazena um único caractere/letra/número ou valores ASCII.
+
+Operador|--|
+:--------- | :--------- 
+Menor que:|<
+Menor ou igual: |<=
+Maior que : |>
+Maior ou igual :|>= 
+Igual :|==
+Diferente de:|!= 
+
+
 ```
 Condicionais:
 Use if para especificar um bloco de código a ser executado, se uma condição especificada for true
@@ -231,21 +237,21 @@ long|	longo
 short|	curto
 
 
-Palavra chave	Tipo	Tamanho	Intervalo
+Palavra chave|	Tipo|	Tamanho|	Intervalo
 :--------- | :--------- | :--------- | :--------- |
-char|	Caracter|	|1|	-128 a 127
-signed| char|	Caractere com sinal|	1|	-128 a 127
-unsigned char	Caractere sem sinal	1	0 a 255
-Int	Inteiro	2	-32.768 a 32.767
-signed int	Inteiro com sinal	2	-32.768 a 32.767
-unsigned int	Inteiro sem sinal	2	0 a 65.535
-short int	Inteiro curto	2	-32.768 a 32 767
-signed short int	Inteiro curto com sinal	2	-32.768 a 32.767
-unsigned short int	Inteiro curto sem sinal	2	0 a 65.535
-long int	Inteiro long	4	-2.147.483.648 a 2.147.483.647
-signed long int	Inteiro longo com sinal	4	-2.147.483.648 a 2.147.483.647
-unsigned long int	Inteiro longo sem sinal	4	0 a 4.294.967.295
-float	Ponto flutuante com precisão simples	4	3.4 E-38 a 3.4E+38
-double	Ponto flutuante com precisão simples	8	1.7 E-308 a 1.7E+308
-long double	Ponto flutuante com precisão dupla longo	16	3.4E-4932 a 1.1E+4932
+char|	Caracter	|1|	-128 a 127|
+signed char|	Caractere com sinal	|1|	-128 a 127
+unsigned char|	Caractere sem sinal	|1|	0 a 255
+Int|	Inteiro	|2|	-32.768 a 32.767
+signed int|	Inteiro com sinal	|2|	-32.768 a 32.767
+unsigned int|	Inteiro sem sinal	|2|	0 a 65.535
+short int|	Inteiro curto	|2|	-32.768 a 32 767
+signed short int|	Inteiro curto com sinal	|2|	-32.768 a 32.767
+unsigned short int|	Inteiro curto sem sinal	|2|	0 a 65.535
+long int|	Inteiro long	|4|	-2.147.483.648 a 2.147.483.647
+signed long int|	Inteiro longo com sinal	|4|	-2.147.483.648 a 2.147.483.647
+unsigned long int|	Inteiro longo sem sinal	|4|	0 a 4.294.967.295
+float|	Ponto flutuante com precisão simples	|4|	3.4 E-38 a 3.4E+38
+double|	Ponto flutuante com precisão simples	|8|	1.7 E-308 a 1.7E+308
+long double|	Ponto flutuante com precisão dupla longo	|16|	3.4E-4932 a 1.1E+4932
 # Aula 04
