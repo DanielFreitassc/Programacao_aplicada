@@ -215,4 +215,37 @@ int main(void) {
   return 0;
 }
 ```
+Palavra Chave | Tipo
+:--------- | :------:
+char|	caracter
+int|	inteiro
+float|	real de precisão simples
+double|	real de precisao dupla
+void|	vazio (sem valor)
+
+Palavra Chave|	Tipo
+:--------- | :------:
+signed|	caracter
+unsigned|	Inteiro
+long|	longo
+short|	curto
+
+
+Palavra chave	Tipo	Tamanho	Intervalo
+:--------- | :--------- | :--------- | :--------- |
+char|	Caracter|	|1|	-128 a 127
+signed| char|	Caractere com sinal|	1|	-128 a 127
+unsigned char	Caractere sem sinal	1	0 a 255
+Int	Inteiro	2	-32.768 a 32.767
+signed int	Inteiro com sinal	2	-32.768 a 32.767
+unsigned int	Inteiro sem sinal	2	0 a 65.535
+short int	Inteiro curto	2	-32.768 a 32 767
+signed short int	Inteiro curto com sinal	2	-32.768 a 32.767
+unsigned short int	Inteiro curto sem sinal	2	0 a 65.535
+long int	Inteiro long	4	-2.147.483.648 a 2.147.483.647
+signed long int	Inteiro longo com sinal	4	-2.147.483.648 a 2.147.483.647
+unsigned long int	Inteiro longo sem sinal	4	0 a 4.294.967.295
+float	Ponto flutuante com precisão simples	4	3.4 E-38 a 3.4E+38
+double	Ponto flutuante com precisão simples	8	1.7 E-308 a 1.7E+308
+long double	Ponto flutuante com precisão dupla longo	16	3.4E-4932 a 1.1E+4932
 # Aula 04
