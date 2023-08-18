@@ -1,3 +1,43 @@
+> Daniel Freitas
+<h1 align="center">Bem-Vindos Ao Meu Caderno De Anotações Vamos Em Uma Incrivel aventura Pelo Maravilhoso Mundo do C e C++! 🚀</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-blue.svg" alt="Languages: C | C++">
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Coding GIF">
+</p>
+
+<p align="center">
+  Você está prestes a embarcar em uma jornada épica pelo universo do C e C++. Prepare-se para mergulhar nas profundezas do código de baixo nível, desvendar os mistérios dos ponteiros e dominar a arte da otimização! 💡🔍
+</p>
+
+<p align="center">
+  🌟 Meu repositório é caderno de anotações online mas pode servir para programadores C e C++ de todos os níveis de habilidade. 🌟
+</p>
+
+## Por Que Amar C e C++?
+
+🔍 **Desempenho de Alta Octanagem:** Com C e C++, você está no controle total da memória e dos recursos do sistema. Nada de sacrificar velocidade!
+
+💡 **Flexibilidade Extrema:** C e C++ oferecem liberdade criativa ilimitada. Projetos pequenos ou grandes, eles fazem de tudo!
+
+🧩 **Puzzles Intelectuais:** Resolver quebra-cabeças de lógica e algoritmos é uma alegria nesses idiomas. Prepare-se para exercitar seu cérebro! 🧠
+
+⚡ **Base para Outras Linguagens:** Muitas outras linguagens dependem das raízes do C e C++. Aprenda isso, e você estará bem encaminhado!
+
+## Vamos Codificar! 🚀
+
+Preparado para se aventurar na jornada emocionante do C e C++? Vamos lá! Pegue suas xícaras de café, ative seus compiladores e vamos começar a codificação! 🎮👩‍💻👨‍💻
+
+<p align="center">
+  <img src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif" alt="Coding GIF">
+</p>
+
+
+---
+
 # Disciplina 
 > Programaçao aplicada em ``C`` e ``C++``
 # Professor: [Vagner Rodrigues](https://github.com/professorvagner)
