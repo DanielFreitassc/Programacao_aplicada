@@ -160,8 +160,8 @@ printf("%c\n", meuTexto);
 ```
 |Tipo de Dados  | Tamanho      |      Descrição
 |int	        | 2 or 4 bytes |      Armazena números inteiros, sem decimais.
-|float	        | 4 bytes      |      Armazena números fracionários, contendo um ou mais decimais.
-|double	        | 8 bytes      |      Armazena números fracionários, contendo um ou mais decimais. 
+|float	        | 4 bytes      |      Armazena números fracionários, contendo  6 casas decimais.
+|double	        | 8 bytes      |      Armazena números fracionários, contendo 15 casas decimais. 
 |char	        | 1 byte       |      Armazena um único caractere/letra/número ou valores ASCII.
 ```
 ```
