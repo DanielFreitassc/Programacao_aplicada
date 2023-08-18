@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  🌟 Meu repositório é caderno de anotações online mas pode servir para programadores C e C++ de todos os níveis de habilidade. 🌟
+  🌟 Meu repositório é um caderno de anotações online mas pode servir para programadores C e C++ de todos os níveis de habilidade. 🌟
 </p>
 
 ## Por Que Amar C e C++?
