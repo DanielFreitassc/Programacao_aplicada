@@ -346,6 +346,59 @@ long double|	Ponto flutuante com precisão dupla longo	|16|	3.4E-4932 a 1.1E+493
 # Aula do dia 09/11 
 vimos AUTO , ,Static, 
 Fizemos 3 exercicios com o professor e sobrou uma para fazermos em casa. 
+# Primeiro Exercicio
+```
+#include <iostream>
+using namespace std;
+
+class Calculadora{
+  public: 
+    double somar(int a, int b){
+      return a+b;
+    }
+    double subtrair(int a, int b){
+      return a-b;
+    }
+    double multiplicar(int a, int b){
+      return a*b;
+    }
+    double dividir(int a, int b){
+      return a/b;
+    }
+  private:
+};
+int main() {
+  Calculadora calc; 
+  double num1, num2; 
+  char operacao;
+
+  cout << "Digite o primeiro número: ";
+  cin >> num1;
+  cout << "Digite a operação: ";
+  cin >> operacao;
+  cout << "Digite o segundo número: ";
+  cin >> num2;
+
+  switch(operacao){
+    case '+':
+      cout << "O resultado é: " << calc.somar(num1, num2);
+    break;
+    case '-':
+      cout << "O resultado é: " << calc.subtrair(num1, num2);
+    break;
+    case '*':
+      cout << "O resultado é: " << calc.multiplicar(num1, num2);
+    break;
+    case '/':
+      cout << "O resultado é: " << calc.dividir(num1, num2);
+    break;
+    default:
+    cout << "Operação inválida";
+      break;
+  }
+  return 0;
+}
+```
 # Terceiro Exercicio
 ```
 #include <iostream>
