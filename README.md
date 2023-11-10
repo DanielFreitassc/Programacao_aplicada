@@ -343,4 +343,53 @@ unsigned long int|	Inteiro longo sem sinal	|4|	0 a 4.294.967.295
 float|	Ponto flutuante com precisão simples	|4|	3.4 E-38 a 3.4E+38
 double|	Ponto flutuante com precisão simples	|8|	1.7 E-308 a 1.7E+308
 long double|	Ponto flutuante com precisão dupla longo	|16|	3.4E-4932 a 1.1E+4932
-# Aula 04
+# Aula do dia 09/11 
+vimos AUTO , ,Static, 
+Fizemos 3 exercicios com o professor e sobrou uma para fazermos em casa. 
+# Terceiro Exercicio
+```
+#include <iostream>
+#define QTD_NUMEROS 6
+using namespace std;
+
+class Numeros {
+public:
+    Numeros() {
+        cout << "Um objeto foi inicializado" << endl;
+    }
+
+    void getNumeros() {
+
+        for (int i = 0; i < QTD_NUMEROS; i++) {
+            cout << "Digite o " << i + 1 << " número: ";
+            cin >> meuArray[i];
+        }
+    }
+
+    void mostraResultados() {
+        int resTemp;
+
+        resTemp = meuArray[0] + meuArray[1];
+        cout << meuArray[0] << " + " << meuArray[1] << " = " << resTemp << endl;
+
+        resTemp = meuArray[2] - meuArray[3];
+        cout << meuArray[2] << " - " << meuArray[3] << " = " << resTemp << endl;
+
+        resTemp = meuArray[4] * meuArray[5];
+        cout << meuArray[4] << " * " << meuArray[5] << " = " << resTemp << endl;
+    }
+
+private:
+    int meuArray[QTD_NUMEROS] = {0};
+};
+
+int main() {
+    Numeros meusNumeros;
+    meusNumeros.getNumeros();
+    meusNumeros.mostraResultados();
+
+    return 0;
+}
+
+```
+em seguida vimos inline
