@@ -445,7 +445,8 @@ int main() {
 }
 
 ```
-# Inline: A palavra-chave inline diz para o compilador substituir o código na definição de função para cada instância de uma chamada de função. O uso das funções embutidas pode fazer com que seu programa seja mais rápido porque ele elimina a sobrecarga associada às chamadas de função.
+# Inline: 
+A palavra-chave inline diz para o compilador substituir o código na definição de função para cada instância de uma chamada de função. O uso das funções embutidas pode fazer com que seu programa seja mais rápido porque ele elimina a sobrecarga associada às chamadas de função.
 
 # Parâmetro de Referência: &
 O que estamos fazendo aí é alocando, reservando, um espaço na memória do seu computador. Assim, quando usamos 'num', o C++ entende que devemos ir no endereço para onde essa variável aponta e pegar o número que está dentro daquele local da memória.
