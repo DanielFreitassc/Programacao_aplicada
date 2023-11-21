@@ -462,6 +462,44 @@ Sobrecarga, ou overloading, é a técnica que permite que tenhamos funções com
 ### • Muito utilizada para compiladores, games, sistemas operacionais e sistemas embarcados.
 ### • Foi criada, influenciada e testada por programadores. É a mais popular entre excelentes programadores.
 ### • Podemos dizer que no C, a unidade de programação é a função.
+### • Foi desenvolvida no Bell Laboratories no início da década de 1980 por Bjarne Stroustrup
+### • C++ fornece vários recursos que aprimoraram a Linguagem C, sobretudo a programação orientada a objetos (object-oriented programming) ou OOP
+### • Objetos consistem em componentes de software reutilizáveis que modelam itens do mundo real.
+### • No C++, a unidade de programação é a classe, que contém funções que implementam operações e dados que implementam atributos. A partir da classe, os objetos são instanciados
+
+# PROGRAMAÇÃO ESTRUTURADA
+### • Na década de 1960, muitos problemas ocorriam por utilização de transferências de controle nos códigos-fonte. A principal vilã associada a isso é a instrução goto, que promove um desvio incondicional para um endereço relativo na memória de programa.
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/d97dabbe-7764-4a77-b640-2b57551ccf2e)
+### • O trabalho de Böhm e Jacopini, apresentou o conceito de programação estrutura, que eliminava a necessidade de instruções goto, independente do código.
+### • Assim, todos os programas podem ser escritos em termos de estruturas de controle, que são:estrutura de sequência, estrutura de seleção e estrutura de repetição.
+### • Dica: Nunca, jamais, em hipótese alguma, utilize a instrução goto nos softwares em C ou C++!
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/09c77eb8-a2ae-4695-b53e-953514ba1dc4)
+# ESTRUTURADA VS ORIENTADA A OBJETOS
+```
+ESTRUTURADA VS ORIENTADA A OBJETOS
+Programação Estruturada      Programação Orientada a Objetos
+• Eficiente para solucionar  • Defende um pensamento de
+  problemas simples e direto.  programação mais voltado ao
+                               pensamento humano.
+```
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/c6a4c36d-b8f8-4d60-8182-8fdb4462d4c4) ![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/ab04f16c-ef04-46cc-8a64-8c1e59424453)
+
+# PALAVRAS RESERVADAS 
+### Palavras reservadas da linguagem C e C++
+
+
+auto| break| case| char| const| continue| default| do
+:--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- | :--------- |
+double| else| enum| extern| float| for| goto| if
+int| long| register| return| short| signed| sizeof| static
+struct| switch| typedef| union| unsigned| void| volatile| while
+and| and_eq| asm| bitand| bitor| bool| catch| class
+compl| const_cast| delete| dynamic_cast| explicit| export| false| friend
+inline| mutable| namespace| new| not| not_eq| operator| or
+or_eq| private| protected| public| reinterpreted_cast| static_cast| template| this
+throw| true| try| typeid| typename| using| virtual| wchat_t
+xor| xor_eq|
+
 
 
 
