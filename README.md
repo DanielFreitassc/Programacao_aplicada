@@ -500,6 +500,178 @@ or_eq| private| protected| public| reinterpreted_cast| static_cast| template| th
 throw| true| try| typeid| typename| using| virtual| wchat_t
 xor| xor_eq|
 
+# HELLO WORLD 
+## Fizemos um hello world que é um classico primeiro codigo para dar sorte :), Segue exemplo...
+### Com printf
+```
+#include <iostream>
+using namespace std;
+int main() {
+cout << "Hello World!\n";
+printf("Também pode ser utilizado.\n");
+return 0;
+}
+```
+# Só com o cout
+```
+#include <iostream>
+int main() {
+std::cout << "Hello World!"<< std::endl;
+return 0;
+}
+```
+# ENTRADA E SAÍDA DE DADOS
+### • Para entrada de dados utilizamos o objeto cin e para saída de dados utilizamos o objeto cout. Exemplo:
+```
+#include <iostream>
+int main()
+{
+int val;
+std::cout << "Digite um valor: ";
+std::cin >> val;
+std::cout << “Valor: "<< val << std::endl;
+return 0;
+}
+```
+### • Objeto manipulador de fluxo: endl (end line – e também pertence ao namespace std. Gera a saída de um caractere de nova linha e esvazia o buffer de saída).
 
+# ENTRADA E SAÍDA DE DADOS
+- Objeto de fluxo de saída: cout
+- Operador de inserção de fluxo: <<
+- Objeto de fluxo de entrada: cin
+- Operador de extração de fluxo: >>
+# Exemplo: Soma e Média
+```
+int main()
+{
+int num1, num2;
+float media;
+std::cout << "Digite dois numeros: ";
+std::cin >> num1 >> num2;
+media = (num1+num2)/2;
+std::cout << "Soma = " << num1+num2 << std::endl;
+std::cout << "Media = " << media << std::endl;
+return 0;
+}
+```
+# Exemplo: Teste Condicional
+```
+#include <iostream>
+int main()
+{
+if(8 < 23)
+std::cout << "Verdadeiro" << std::endl;
+if(8 > 23)
+std::cout << "Falso" << std::endl;
+return 0;
+}
+```
+# PRECEDÊNCIA DE OPERADORES ARITMÉTICOS
+Operador| Operação| Ordem de Avaliação|
+:--------- | :--------- | :---------
+" ( ) " |Parênteses |Maior. Internos primeiros. Esquerda para a direita.
+" * / " |Multiplicação e Divisão |Mediano. Esquerda para a direita se houver vários.
+" % " |Módulo |Mediano. Esquerda para a direita se houver vários.
+" + - " |Adição e Subtração |Menor. Esquerda para a direita se houver vários.
 
+Sequência| Descrição Do Escape
+:--------- | :---------
+\n| Nova Linha
+\t| Tabulação Horizontal
+\r| Posiciona o cursos no início da linha atual (sem nova linha)
+\a| Aviso sonoro
+\\\  | Imprime um caractere de barra invertida
+\’| Imprime aspas simples
+\”| Imprime aspas duplas
+# NSTRUÇÕES DE SELEÇÃO
+### • As instruções de seleção da linguagem C e da linguagem C++ são exatamente as mesmas e contempla as opções:
+# Seleção Simples:
+```
+int val = 741;
+if(val > 555)
+cout << "Valor maior que 555" << endl;
+int val = 741;
+if(val > 555)
+cout << "Valor maior que 555" << endl;
+else
+cout << "Valor menor que 555" << endl;
+```
+# Seleção Aninhada:
+```
+int temperature = 25;
+if(temperature > 40)
+cout << "Muito calor" << endl;
+else if(temperature > 30)
+cout << "Calor" << endl;
+else if(temperature > 20)
+cout << "Temperatura ok" << endl;
+else if(temperature > 10)
+cout << "Frio" << endl;
+else
+cout << "Muito frio" << endl
+```
+### • Quando desejamos efetuar múltiplas ações podemos associar uma variável, retorno de função ou expressão com expressões inteiras constantes. A instrução switch garante esta funcionalidade.
+```
+int val = 0;
+cout << "Digite um numero inteiro: ";
+cin >> val;
+switch(val)
+{
+case 1:
+cout << "Numero 1." << endl;
+break;
+case 2:
+cout << "Numero 2." << endl;
+break;
+default:
+cout << "Nem 1, nem 2." << endl;
+}
+
+```
+- A instrução switch pode ter um número indeterminado de cases.
+- A instrução switch pode ter um número indeterminado de cases.
+- Quando utilizamos default, significa que será a opção executada quando nenhum caso for satisfeito.
+- O uso de default é opcional.
+- Após a conclusão de cada caso, precisamos de uma instrução break, para sair do switch, do contrário, ele continuará executando os casos seguintes.
+# Swich case
+```
+char opt;
+cout << "Digite um caractere: ";
+cin >> opt;
+switch(opt)
+{
+case 'A’:
+case ‘a’:
+cout << "Caractere A" << endl;
+break;
+case ‘B’:
+case ‘b’:
+cout << "Caractere B" << endl;
+break;
+default:
+cout << "Nem A, nem B" << endl;
+}
+
+```
+### O swich também pode ser utilizada para selecionar caracteres. Normalmente utilizamos o tipo de dado char para declarar variáveis que vão armazenar o byte referente a cada caractere de acordo com a tabela ASCII.
+### • As instruções de repetição da linguagem C e da linguagem C++ são parecidas. As instruções while e do-while são idênticas, entretanto a instrução for possui algumas simples alterações. Número definido de repetições:
+```
+//variável de controle de 1 até 50 com incrementos de 1.
+for(int i=1; i<=50; i++)
+//variável de controle ed 50 até 1 com decrementos de 1.
+for(int i=50; i>=1; i--)
+//variável de controle faz a sequência 3, 6, 9, 12, 15.
+for(int i=3; i<=15; i+=3)
+//exemplo com duas variáveis de controle, i vai de 0 até 9, j vai de 9 até 0.
+for(int i=0, j=9; i<=9; i++, j--)
+//realiza iterações até 10, o i deve ter sido declarado e inicializado a priori.---------------|
+for( ; i<=10; i++)                                                                             |
+//a variável i deverá sempre incrementada dentro do bloco de instruções do for.                |                 ------------------------------
+for(int i=0; i<=10; )                                                                          |-----------------| Estas aplicações não são  |
+//avaliará a condição como sempre verdadeira, gerando um loop infinito.                        |                 | permitidas na linguagem C.|          
+for(int i=0; ; i++)                                                                            |                 ______________________________
+//omitindo todos os parâmetros: loop infinito.                                                 |
+for( ; ; )                                                                     -----------------
+
+```
 
