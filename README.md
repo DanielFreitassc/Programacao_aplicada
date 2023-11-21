@@ -453,7 +453,77 @@ O que estamos fazendo aí é alocando, reservando, um espaço na memória do seu
 
 # Sobrecarga de Funções em C++ : 
 Sobrecarga, ou overloading, é a técnica que permite que tenhamos funções com mesmo nome, desde que seus parâmetros sejam diferentes
+# Exemplo 1 feito em sala 
+```
+#include <stdio.h>
+#include <string.h>
 
+typedef struct {
+    int id;
+    char nome[50];
+    float salario;
+} Funcionario;
+
+void imprimeFuncionario(Funcionario funcionarioTemporario){
+    printf("Id: %i\n",funcionarioTemporario.id);
+    printf("Nome: %s\n",funcionarioTemporario.nome);
+    printf("Salário R$%.2f\n",funcionarioTemporario.salario);
+}
+
+int main()
+{
+     Funcionario primeiroFuncionario;
+     primeiroFuncionario.id = 1;
+     strcpy(primeiroFuncionario.nome,"Paulo");
+     primeiroFuncionario.salario = 5000;
+     
+     imprimeFuncionario(primeiroFuncionario);
+    return 0;
+}
+
+//Struct Funcioario -> Classe
+//primeiroFuncionario -> Instancia
+//Variaveis do Struct -> Atributos
+//imprimeFuncionario() -> Método
+```
+# Exemplo 2 feito em sala 
+```
+#include <iostream>
+#include <string>
+
+class Funcionario{
+ private: //Atributos da Classe
+    int id;
+    std::string nome; //char nome[50];
+    float salario;
+ public:
+   Funcionario(int id,const std::string& nome,float salario){ //Construtor
+      this->id = id;
+      this->nome = nome;
+      this->salario = salario;
+   }
+   void imprimir(){//Método
+       std::cout << "ID: " << id << std::endl;
+       std::cout << "Nome: " << nome << std::endl;
+       std::cout << "Salario: R$" << salario << std::endl;
+   }
+   void editarNome(const std::string& nome){
+       this->nome = nome;
+   }
+};
+
+int main()
+{
+    Funcionario primeiroFuncionario(1,"Paulo",5000);
+    Funcionario segundoFuncionario(2, "Daniel", 10000);
+    primeiroFuncionario.imprimir();
+    primeiroFuncionario.editarNome("Paulo Silva");
+     
+    primeiroFuncionario.imprimir();
+    segundoFuncionario.imprimir();
+    return 0;
+}
+```
 # Introdução a Linguagem 
 # BREVE HISTÓRICO DA LINGUAGEM C
 ### • Origem: década de 70 (Dennis Ritchie)
