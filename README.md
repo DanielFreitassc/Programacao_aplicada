@@ -453,3 +453,15 @@ O que estamos fazendo aí é alocando, reservando, um espaço na memória do seu
 
 # Sobrecarga de Funções em C++ : 
 Sobrecarga, ou overloading, é a técnica que permite que tenhamos funções com mesmo nome, desde que seus parâmetros sejam diferentes
+
+# Introdução a Linguagem 
+# BREVE HISTÓRICO DA LINGUAGEM C
+### • Origem: década de 70 (Dennis Ritchie)
+### • É uma linguagem estruturada de alto/médio nível.
+### • Criada para prover acesso de baixo nível ao hardware (CPU, I/Os e periféricos) e se entender bem com o Assembly.
+### • Muito utilizada para compiladores, games, sistemas operacionais e sistemas embarcados.
+### • Foi criada, influenciada e testada por programadores. É a mais popular entre excelentes programadores.
+### • Podemos dizer que no C, a unidade de programação é a função.
+
+
+
