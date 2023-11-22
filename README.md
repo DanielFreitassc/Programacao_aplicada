@@ -744,4 +744,39 @@ for(int i=0; ; i++)                                                             
 for( ; ; )                                                                     -----------------
 
 ```
+# Calculadora IMC
+```
+#include <iostream>
+#include <math.h> 
+using namespace std;
+
+int main(){
+    double peso, altura, imc;
+    cout << "Digite O seu peso: ";
+    cin >> peso;
+    cout << "Digite sua altura: ";
+    cin >> altura;
+    
+    imc = peso / pow(altura,2);
+    if(imc < 18.5){
+        printf("Seu IMC:%.2f magreza", imc);
+    }else if(imc <=24.9){
+        printf("Seu IMC:%.2f Normal", imc);
+    }else if(imc <=29,9){
+        printf("Seu IMC:%.2f Sobrepeso", imc);
+    }else if(imc <= 39,9){
+        printf("Seu IMC:%.2f Obesidade", imc);
+    }else{
+        printf("Seu IMC:%.2f Obesidade Grave", imc);
+    }
+    
+    
+    return 0;
+}
+```
+### Tabela para tratar os resultados e gerar uma resposta mais personalizada!
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/d88203e6-ab63-4162-ba6e-86b1670771b1) 
+### Formula que utilizei 
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/0e795246-6f2a-4745-a7da-12fb8a90910d)
+
 
