@@ -60,7 +60,17 @@ Preparado para se aventurar na jornada emocionante do C e C++? Vamos lá! Pegue 
 14. [Triângulo de Pascal](#triângulo-de-pascal)
 15. [Ordenação de Números](#ordenação-de-números)
 16. [Jogo da Forca](#jogo-da-forca)
-
+### 17. [Conta Bancária (C++)](#conta-bancária-c)
+### 18. [Livro (C++)](#livro-c)
+### 19. [Retângulo (C++)](#retângulo-c)
+### 20. [Estudante (C++)](#estudante-c)
+### 21. [Carro (C++)](#carro-c)
+### 22. [Conta Corrente (C++)](#conta-corrente-c)
+### 23. [Empresa (C++)](#empresa-c)
+### 24. [Programa em C++ - Operações Matemáticas e Comparação](#programa-em-c---operações-matemáticas-e-comparação)
+### 25. [Programa em C++ - Verificação de Conceito](#programa-em-c---verificação-de-conceito)
+### 26. [Programa em C++ - Operações com Números](#programa-em-c---operações-com-números)
+### 27. [Programa em C++ - Equação da Reta](#programa-em-c---equação-da-reta)
 ---
 
 Começaremos em ``C``
