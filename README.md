@@ -1385,3 +1385,135 @@ int main() {
 }
 
 ```
+## Estudante
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe Estudante
+struct Estudante {
+    char nome[50];
+    int idade;
+    double nota;
+};
+
+// Função para verificar se o estudante passou
+int verificarAprovacao(struct Estudante estudante) {
+    return estudante.nota >= 6.0;
+}
+
+int main() {
+    // Criando um estudante
+    struct Estudante aluno = {"Ana Souza", 20, 7.5};
+
+    // Verificando aprovação e exibindo resultado
+    if (verificarAprovacao(aluno)) {
+        printf("%s foi aprovado!\n", aluno.nome);
+    } else {
+        printf("%s foi reprovado.\n", aluno.nome);
+    }
+
+    return 0;
+}
+
+```
+## Carro
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe Carro
+struct Carro {
+    char modelo[50];
+    int ano;
+    double preco;
+};
+
+// Função para exibir informações do carro
+void exibirInformacoesCarro(struct Carro carro) {
+    printf("Modelo: %s\n", carro.modelo);
+    printf("Ano: %d\n", carro.ano);
+    printf("Preço: %.2f\n", carro.preco);
+}
+
+int main() {
+    // Criando um carro
+    struct Carro meuCarro = {"Civic", 2022, 80000.0};
+
+    // Exibindo informações do carro
+    exibirInformacoesCarro(meuCarro);
+
+    return 0;
+}
+
+```
+## Conta Corrente
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe ContaCorrente
+struct ContaCorrente {
+    int numeroConta;
+    char titular[50];
+    double saldo;
+};
+
+// Função para realizar uma transferência entre contas
+void transferir(struct ContaCorrente *origem, struct ContaCorrente *destino, double valor) {
+    if (valor <= origem->saldo) {
+        origem->saldo -= valor;
+        destino->saldo += valor;
+        printf("Transferência realizada com sucesso.\n");
+    } else {
+        printf("Saldo insuficiente para a transferência.\n");
+    }
+}
+
+int main() {
+    // Criando duas contas correntes
+    struct ContaCorrente conta1 = {1001, "João Silva", 1500.0};
+    struct ContaCorrente conta2 = {1002, "Maria Oliveira", 2000.0};
+
+    // Realizando uma transferência entre contas
+    transferir(&conta1, &conta2, 500.0);
+
+    // Exibindo saldos após a transferência
+    printf("Saldo da conta de %s: %.2f\n", conta1.titular, conta1.saldo);
+    printf("Saldo da conta de %s: %.2f\n", conta2.titular, conta2.saldo);
+
+    return 0;
+}
+
+```
+## Empresa
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe Funcionario
+struct Funcionario {
+    char nome[50];
+    double salario;
+};
+
+// Definição da estrutura da classe Empresa
+struct Empresa {
+    char nome[100];
+    struct Funcionario funcionarios[50];
+    int numFuncionarios;
+};
+
+// Função para calcular a folha de pagamento da empresa
+double calcularFolhaPagamento(struct Empresa empresa) {
+    double totalSalarios = 0.0;
+    for (int i = 0; i < empresa.numFuncionarios; ++i) {
+        totalSalarios += empresa.funcionarios[i].salario;
+    }
+    return totalSalarios;
+}
+
+int main() {
+    // Criando uma empresa
+    struct Empresa minhaEmpresa = {"XYZ Ltda", {{"João", 3000.0}, {"Maria", 2500.0}}, 2};
+
+    // Calculando e exibindo a folha de pagamento
+    printf("Folha de Pagamento da %s: %.2
+
+```
