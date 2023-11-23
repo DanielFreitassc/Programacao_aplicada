@@ -1765,7 +1765,7 @@ int main(){
 
 using namespace std;
 
-public class NomeDaClasse{
+class NomeDaClasse{
  
 public:
 
