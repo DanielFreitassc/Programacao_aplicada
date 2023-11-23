@@ -779,4 +779,16 @@ int main(){
 ### Formula que utilizei 
 ![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/0e795246-6f2a-4745-a7da-12fb8a90910d)
 
+# Estrutura com bibliotecas mais usadas
+```
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
 
+int main(){
+    
+    
+    return 0;
+}
+```
