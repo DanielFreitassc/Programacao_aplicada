@@ -984,6 +984,7 @@ int main() {
 
     return 0;
 }
+```
 ## Sequência de Fibonacci:
 ```
 #include <stdio.h>
