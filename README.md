@@ -1778,3 +1778,6 @@ int main(){
     return 0;
 }
 ```
+# Juro composto
+![image](https://github.com/DanielFreitassc/Programacao_aplicada/assets/129224303/9c7875fa-8d08-4953-a961-5b58cd161c0a)
+
