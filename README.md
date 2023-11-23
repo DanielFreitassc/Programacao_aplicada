@@ -792,3 +792,594 @@ int main(){
     return 0;
 }
 ```
+# Exemplo comuns de codigos em c++ 
+## Soma de dois números
+```
+#include <stdio.h>
+
+int main() {
+    int num1, num2, soma;
+
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+
+    soma = num1 + num2;
+
+    printf("A soma é: %d\n", soma);
+
+    return 0;
+}
+
+```
+## Verificação de Número Par ou Ímpar:
+```
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    if (numero % 2 == 0) {
+        printf("%d é um número par.\n", numero);
+    } else {
+        printf("%d é um número ímpar.\n", numero);
+    }
+
+    return 0;
+}
+
+```
+# Fatorial de um Número:
+```
+#include <stdio.h>
+
+int main() {
+    int numero, fatorial = 1;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= numero; ++i) {
+        fatorial *= i;
+    }
+
+    printf("O fatorial de %d é: %d\n", numero, fatorial);
+
+    return 0;
+}
+
+```
+# Palíndromo:
+```
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char palavra[100];
+
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+
+    int i = 0, j = strlen(palavra) - 1;
+    int palindromo = 1;
+
+    while (i < j) {
+        if (palavra[i] != palavra[j]) {
+            palindromo = 0;
+            break;
+        }
+        i++;
+        j--;
+    }
+
+    if (palindromo) {
+        printf("%s é um palíndromo.\n", palavra);
+    } else {
+        printf("%s não é um palíndromo.\n", palavra);
+    }
+
+    return 0;
+}
+
+```
+## Média de Números:
+```
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float numero, soma = 0, media;
+
+    printf("Digite a quantidade de números: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; ++i) {
+        printf("Digite o número %d: ", i);
+        scanf("%f", &numero);
+        soma += numero;
+    }
+
+    media = soma / n;
+
+    printf("A média dos números é: %.2f\n", media);
+
+    return 0;
+}
+
+```
+## Tabuada:
+```
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    printf("Digite um número para a tabuada: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= 10; ++i) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+    }
+
+    return 0;
+}
+
+```
+## Conversão de Temperatura:
+```
+#include <stdio.h>
+
+int main() {
+    int escolha;
+    float temperatura, resultado;
+
+    printf("Escolha a opção:\n");
+    printf("1. Celsius para Fahrenheit\n");
+    printf("2. Fahrenheit para Celsius\n");
+    scanf("%d", &escolha);
+
+    printf("Digite a temperatura: ");
+    scanf("%f", &temperatura);
+
+    if (escolha == 1) {
+        resultado = (temperatura * 9 / 5) + 32;
+        printf("%.2f Celsius é igual a %.2f Fahrenheit.\n", temperatura, resultado);
+    } else if (escolha == 2) {
+        resultado = (temperatura - 32) * 5 / 9;
+        printf("%.2f Fahrenheit é igual a %.2f Celsius.\n", temperatura, resultado);
+    } else {
+        printf("Opção inválida.\n");
+    }
+
+    return 0;
+}
+
+```
+## Verificação de Número Primo:
+```
+#include <stdio.h>
+
+int main() {
+    int numero, i, flag = 0;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    for (i = 2; i <= numero / 2; ++i) {
+        if (numero % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+    if (flag == 0)
+        printf("%d é um número primo.\n", numero);
+    else
+        printf("%d não é um número primo.\n", numero);
+
+    return 0;
+}
+## Sequência de Fibonacci:
+```
+#include <stdio.h>
+
+int main() {
+    int n, primeiro = 0, segundo = 1, proximo;
+
+    printf("Digite o número de termos (n) na sequência de Fibonacci: ");
+    scanf("%d", &n);
+
+    printf("Sequência de Fibonacci:\n");
+
+    for (int i = 0; i < n; ++i) {
+        printf("%d, ", primeiro);
+        proximo = primeiro + segundo;
+        primeiro = segundo;
+        segundo = proximo;
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
+```
+## Contagem de Vogais e Consoantes:
+```
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char frase[100];
+    int vogais = 0, consoantes = 0;
+
+    printf("Digite uma frase: ");
+    fgets(frase, sizeof(frase), stdin);
+
+    for (int i = 0; frase[i] != '\0'; ++i) {
+        if (isalpha(frase[i])) {
+            switch (tolower(frase[i])) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    vogais++;
+                    break;
+                default:
+                    consoantes++;
+            }
+        }
+    }
+
+    printf("Vogais: %d\n", vogais);
+    printf("Consoantes: %d\n", consoantes);
+
+    return 0;
+}
+
+```
+## Inversão de Números
+```
+#include <stdio.h>
+
+int main() {
+    int numero, inverso = 0, resto;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    while (numero != 0) {
+        resto = numero % 10;
+        inverso = inverso * 10 + resto;
+        numero /= 10;
+    }
+
+    printf("Número invertido: %d\n", inverso);
+
+    return 0;
+}
+
+```
+## Calculadora
+```
+#include <stdio.h>
+
+int main() {
+    char operador;
+    double num1, num2, resultado;
+
+    printf("Digite um operador (+, -, *, /): ");
+    scanf(" %c", &operador);
+
+    printf("Digite dois números: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    switch (operador) {
+        case '+':
+            resultado = num1 + num2;
+            break;
+        case '-':
+            resultado = num1 - num2;
+            break;
+        case '*':
+            resultado = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                resultado = num1 / num2;
+            } else {
+                printf("Erro! Divisão por zero.\n");
+                return 1;  // Código de erro
+            }
+            break;
+        default:
+            printf("Operador inválido.\n");
+            return 1;  // Código de erro
+    }
+
+    printf("Resultado: %.2f\n", resultado);
+
+    return 0;
+}
+## Contagem de Palavras em um Frase:
+```
+#include <stdio.h>
+
+int main() {
+    char frase[1000];
+    int contadorPalavras = 0, i;
+
+    printf("Digite uma frase: ");
+    fgets(frase, sizeof(frase), stdin);
+
+    for (i = 0; frase[i] != '\0'; ++i) {
+        if (frase[i] == ' ' || frase[i] == '\n' || frase[i] == '\t') {
+            contadorPalavras++;
+        }
+    }
+
+    printf("Número de palavras na frase: %d\n", contadorPalavras);
+
+    return 0;
+}
+
+```
+## Triângulo de Pascal:
+```
+#include <stdio.h>
+
+int calcularCoeficienteBinomial(int n, int k) {
+    if (k == 0 || k == n) {
+        return 1;
+    } else {
+        return calcularCoeficienteBinomial(n - 1, k - 1) + calcularCoeficienteBinomial(n - 1, k);
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Digite o número de linhas para o Triângulo de Pascal: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            printf("%d ", calcularCoeficienteBinomial(i, j));
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+```
+## Ordenação de Número:
+```
+#include <stdio.h>
+
+void ordenar(int array[], int n) {
+    int temp;
+
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (array[j] > array[j + 1]) {
+                // Troca os elementos se estiverem fora de ordem
+                temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Digite o número de elementos: ");
+    scanf("%d", &n);
+
+    int array[n];
+
+    printf("Digite os elementos:\n");
+    for (int i = 0; i < n; ++i) {
+        scanf("%d", &array[i]);
+    }
+
+    ordenar(array, n);
+
+    printf("Lista ordenada em ordem crescente:\n");
+    for (int i = 0; i < n; ++i) {
+        printf("%d ", array[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
+```
+## Jogo da forca
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#define MAX_PALAVRAS 5
+#define MAX_TAMANHO_PALAVRA 20
+
+char* escolherPalavra() {
+    char* palavras[MAX_PALAVRAS] = {"programacao", "computador", "algoritmo", "linguagem", "desenvolvimento"};
+    srand(time(NULL));
+    return palavras[rand() % MAX_PALAVRAS];
+}
+
+int main() {
+    char* palavra = escolherPalavra();
+    int tamanhoPalavra = strlen(palavra);
+    char palavraAdivinhada[MAX_TAMANHO_PALAVRA];
+    memset(palavraAdivinhada, '_', tamanhoPalavra);
+
+    int tentativas = 6;
+    char letra;
+
+    printf("Bem-vindo ao Jogo da Forca!\n");
+
+    while (tentativas > 0) {
+        printf("Palavra: %s\n", palavraAdivinhada);
+        printf("Tentativas restantes: %d\n", tentativas);
+        printf("Digite uma letra: ");
+        scanf(" %c", &letra);
+
+        int acertou = 0;
+
+        for (int i = 0; i < tamanhoPalavra; ++i) {
+            if (palavra[i] == letra) {
+                palavraAdivinhada[i] = letra;
+                acertou = 1;
+            }
+        }
+
+        if (!acertou) {
+            printf("Letra incorreta. Tente novamente.\n");
+            tentativas--;
+        }
+
+        int palavraCompleta = 1;
+        for (int i = 0; i < tamanhoPalavra; ++i) {
+            if (palavraAdivinhada[i] == '_') {
+                palavraCompleta = 0;
+                break;
+            }
+        }
+
+        if (palavraCompleta) {
+            printf("Parabéns! Você acertou a palavra: %s\n", palavraAdivinhada);
+            break;
+        }
+    }
+
+    if (tentativas == 0) {
+        printf("Game over! A palavra era: %s\n", palavra);
+    }
+
+    return 0;
+}
+```
+# Agora exemplo com orientação a objeto
+## Conta Bancária
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe ContaBancaria
+struct ContaBancaria {
+    int numeroConta;
+    char titular[50];
+    double saldo;
+};
+
+// Função para inicializar uma conta bancária
+void inicializarConta(struct ContaBancaria *conta, int numero, const char *titular, double saldoInicial) {
+    conta->numeroConta = numero;
+    snprintf(conta->titular, sizeof(conta->titular), "%s", titular);
+    conta->saldo = saldoInicial;
+}
+
+// Função para realizar um depósito na conta
+void depositar(struct ContaBancaria *conta, double valor) {
+    conta->saldo += valor;
+}
+
+// Função para realizar um saque da conta
+void sacar(struct ContaBancaria *conta, double valor) {
+    if (valor <= conta->saldo) {
+        conta->saldo -= valor;
+    } else {
+        printf("Saldo insuficiente.\n");
+    }
+}
+
+// Função para exibir informações da conta
+void exibirInformacoes(struct ContaBancaria conta) {
+    printf("Número da Conta: %d\n", conta.numeroConta);
+    printf("Titular: %s\n", conta.titular);
+    printf("Saldo: %.2f\n", conta.saldo);
+}
+
+int main() {
+    // Criando uma conta bancária
+    struct ContaBancaria minhaConta;
+    inicializarConta(&minhaConta, 12345, "Paulo", 1000.0);
+
+    // Realizando operações na conta
+    depositar(&minhaConta, 500.0);
+    sacar(&minhaConta, 200.0);
+
+    // Exibindo informações da conta
+    exibirInformacoes(minhaConta);
+
+    return 0;
+}
+
+```
+## Livro
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe Livro
+struct Livro {
+    char titulo[100];
+    char autor[50];
+    int anoPublicacao;
+};
+
+// Função para exibir informações do livro
+void exibirInformacoesLivro(struct Livro livro) {
+    printf("Título: %s\n", livro.titulo);
+    printf("Autor: %s\n", livro.autor);
+    printf("Ano de Publicação: %d\n", livro.anoPublicacao);
+}
+
+int main() {
+    // Criando um livro
+    struct Livro meuLivro = {"Amor e Odio C++", "Paulo", 2023};
+
+    // Exibindo informações do livro
+    exibirInformacoesLivro(meuLivro);
+
+    return 0;
+}
+
+```
+## Retângulo
+```
+#include <stdio.h>
+
+// Definição da estrutura da classe Retangulo
+struct Retangulo {
+    double comprimento;
+    double largura;
+};
+
+// Função para calcular a área do retângulo
+double calcularArea(struct Retangulo retangulo) {
+    return retangulo.comprimento * retangulo.largura;
+}
+
+int main() {
+    // Criando um retângulo
+    struct Retangulo meuRetangulo = {5.0, 3.0};
+
+    // Calculando e exibindo a área do retângulo
+    printf("Área do Retângulo: %.2f\n", calcularArea(meuRetangulo));
+
+    return 0;
+}
+
+```
