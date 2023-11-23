@@ -67,10 +67,10 @@ Preparado para se aventurar na jornada emocionante do C e C++? Vamos lá! Pegue 
 ### 21. [Carro (C++)](#carro)
 ### 22. [Conta Corrente (C++)](#conta-corrente)
 ### 23. [Empresa (C++)](#empresa)
-### 24. [Programa em C++ - Operações Matemáticas e Comparação](#programa-em-c-operações-matemáticas-e-comparação)
-### 25. [Programa em C++ - Verificação de Conceito](#programa-em-c-verificação-de-conceito)
-### 26. [Programa em C++ - Operações com Números](#programa-em-c-operações-com-números)
-### 27. [Programa em C++ - Equação da Reta](#programa-em-c-equação-da-reta)
+### 24. [Programa em C++ - Operações Matemáticas e Comparação](#Exemplo-1)
+### 25. [Programa em C++ - Verificação de Conceito](#Exemplo-2)
+### 26. [Programa em C++ - Operações com Números](#Exemplo-3)
+### 27. [Programa em C++ - Equação da Reta](#Exemplo-4)
 ---
 
 Começaremos em ``C``
@@ -1549,6 +1549,7 @@ int main() {
 
 ```
 # Exemplos 1 2 3 4
+## Exemplo 1
 ```
 1) Desenvolva um programa em C++ que solicite dois números ao usuário. 
 O programa deverá calcular a soma, diferença, multiplicação e divisão 
@@ -1607,6 +1608,7 @@ int main(){
 	return 0;
 }
 ```
+## Exemplo 2
 ```
 2) Desenvolva um programa em C++ que peça para o usuário inserir uma nota de 0 a 100. 
 Se a nota estiver entre 90 e 100 será impresso “grau A”. Se estiver entre 80 a 89, 
@@ -1657,6 +1659,7 @@ int main(){
 	return 0;
 }
 ```
+## Exemplo 3
 ```
 3) Faça uma classe em C++ que contenha um construtor para gerar uma mensagem 
 de inicialização e uma função onde o usuário entrará com 6 números inteiros. 
@@ -1700,6 +1703,7 @@ int main(){
 	return 0;
 }
 ```
+## Exemplo 4
 ```
 4) Desenvolva um programa em C++ que calcule o valor de y para o intervalo de x[-12,47] 
 variando de I em I na equação da reta: 𝑦=4𝑥 −53. insira o algoritmo de cálculo em uma 
