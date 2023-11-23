@@ -19,7 +19,7 @@
 
 ## Por Que Amar C e C++?
 
-🔍 **Desempenho de Alta Octanagem:** Com C e C++, você está no controle total da memória e dos recursos do sistema. Nada de sacrificar velocidade!
+🔍 **Desempenho de Alta Octanagem:** Com *C* e *C++*, você está no controle total da memória e dos recursos do sistema. Nada de sacrificar velocidade!
 
 💡 **Flexibilidade Extrema:** C e C++ oferecem liberdade criativa ilimitada. Projetos pequenos ou grandes, eles fazem de tudo!
 
