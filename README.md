@@ -1108,6 +1108,7 @@ int main() {
 
     return 0;
 }
+```
 ## Contagem de Palavras em um Frase:
 ```
 #include <stdio.h>
