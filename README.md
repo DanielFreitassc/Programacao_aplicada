@@ -71,6 +71,7 @@ Preparado para se aventurar na jornada emocionante do C e C++? Vamos lá! Pegue 
 ### 25. [Programa em C++ - Verificação de Conceito](#Exemplo-2)
 ### 26. [Programa em C++ - Operações com Números](#Exemplo-3)
 ### 27. [Programa em C++ - Equação da Reta](#Exemplo-4)
+### 28. [POO C++ - Estrutura Principal](#Estrutura)
 ---
 
 Começaremos em ``C``
@@ -1755,5 +1756,25 @@ int main(){
 	
 	while (1);
 	return 0;
+}
+```
+# Estrutura
+```
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+public class NomeDaClasse{
+ 
+public:
+
+private:
+
+};
+
+int main(){
+    
+    return 0;
 }
 ```
