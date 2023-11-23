@@ -39,7 +39,7 @@ Preparado para se aventurar na jornada emocionante do C e C++? Vamos lá! Pegue 
 ---
 
 # Disciplina 
-> Programaçao aplicada em ``C`` e ``C++``
+> Programaçao aplicada em *C* e *C++*
 # Professor: [Vagner Rodrigues](https://github.com/professorvagner)
 
 # Sumário
