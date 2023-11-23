@@ -1517,3 +1517,208 @@ int main() {
     printf("Folha de Pagamento da %s: %.2
 
 ```
+# Exemplos 1 2 3 4
+```
+1) Desenvolva um programa em C++ que solicite dois números ao usuário. 
+O programa deverá calcular a soma, diferença, multiplicação e divisão 
+entre os dois números além de informar se o primeiro número é maior, 
+menor ou igual ao segundo número.  
+
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+class Calculadora{
+	public:
+		void soma(double num1, double num2){
+			cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+		}
+		void sub(double num1, double num2){
+			cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+		}
+		void mult(double num1, double num2){
+			cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+		}
+		void divi(double num1, double num2){
+			if(num2!=0)
+				cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+			else	
+				cout << "Resultado indeterminado (divisão por zero)." << endl;
+		}
+		void maior(double num1, double num2){
+			if(num1>num2)
+				cout << "O maior número digitado é " << num1 << endl;
+			else if(num2>num1)
+				cout << "O maior número digitado é " << num2 << endl;
+			else 
+				cout << "Os números digitados são iguais." << endl;
+		}
+	private:	
+};
+
+int main(){
+	Calculadora mostraValor;
+	
+	double num1, num2;
+	cout << "Informe o primeiro número: ";
+	cin >> num1;
+	cout << "Informe o segundo número: ";
+	cin >> num2;
+	
+	mostraValor.soma(num1,num2);
+	mostraValor.sub(num1,num2);
+	mostraValor.mult(num1,num2);
+	mostraValor.divi(num1,num2);
+	mostraValor.maior(num1,num2);
+	
+	while(1);
+	return 0;
+}
+```
+```
+2) Desenvolva um programa em C++ que peça para o usuário inserir uma nota de 0 a 100. 
+Se a nota estiver entre 90 e 100 será impresso “grau A”. Se estiver entre 80 a 89, 
+“grau B”. Entre 70 a 79, “grau C”. Abaixo de 70, “Reprovado”. Caso o usuário digite 
+um valor fora do intervalo de 0 a 100 imprima “Entrada Inválida”. 
+
+
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+class VerificaConceito{
+	public:
+		void mostraConceito(int nota){
+			notaFinal = nota;
+			if(notaFinal>=90&&notaFinal<=100)
+				cout << "Grau A." << endl;
+			else if(notaFinal>=80&&notaFinal<=89)
+				cout << "Grau B." << endl;
+			else if(notaFinal>=70&&notaFinal<=79)
+				cout << "Grau C." << endl;
+			else
+				cout << "Reprovado." <<endl;
+		}
+		int mostraNota(){
+			return notaFinal;			
+		}
+	private:
+		int notaFinal = 0;
+};
+
+int main(){
+	int nota = -1;
+	VerificaConceito minhaNota;
+	do{
+		cout << "Insira uma nota de 0 à 100: ";
+		cin >> nota;
+		if(nota <0 || nota > 100)
+			cout << "Entrada inválida! Repita a operação." << endl;
+	}while (nota <0 || nota > 100);
+	minhaNota.mostraConceito(nota);
+	int verificaNota = 0;
+	verificaNota = minhaNota.mostraNota();
+	//cout << "A nota final inserida foi :" << notaFinal << endl;
+	cout << "A nota final inserida foi: " << verificaNota << endl;
+	while(1);
+	return 0;
+}
+```
+```
+3) Faça uma classe em C++ que contenha um construtor para gerar uma mensagem 
+de inicialização e uma função onde o usuário entrará com 6 números inteiros. 
+A saída do sistema deverá imprimir a soma do primeiro com o segundo, a subtração 
+do terceiro com o quarto e a multiplicação do quinto com o sexto número inserido. 
+
+
+#include <iostream>
+#define QTD_NUMEROS 6
+using std::cout;
+using std::cin;
+using std::endl;
+
+class Numeros{
+	public:
+		Numeros (){
+			cout << "Um objeto foi inicializado..." << endl;
+		}
+		void getNumeros(){
+			for(int i = 1; i <= QTD_NUMEROS ; i++){
+				cout << "Digite o " << i  << "º número: ";
+				cin >> numeros[i-1];
+			}
+		}
+		void resultados(){
+		    cout << numeros[0] << " + " << numeros[1] << " = " << (numeros[0] + numeros[1]) << endl;
+		    cout << numeros[2] << " - " << numeros[3] << " = " << (numeros[2] - numeros[3]) << endl;
+		    cout << numeros[4] << " * " << numeros[5] << " = " << (numeros[4] * numeros[5]) << endl;
+		}
+		
+	private:
+		double numeros[QTD_NUMEROS] = {0};
+};
+
+
+int main(){
+	Numeros meusNumeros;
+	meusNumeros.getNumeros();
+	meusNumeros.resultados();
+	while(1);
+	return 0;
+}
+```
+```
+4) Desenvolva um programa em C++ que calcule o valor de y para o intervalo de x[-12,47] 
+variando de I em I na equação da reta: 𝑦=4𝑥 −53. insira o algoritmo de cálculo em uma 
+função-membro pertencente a uma classe no mesmo arquivo de código-fonte.
+
+
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+class EquacaoReta{
+	public:
+		EquacaoReta(int A, int B){
+			coef_A = A;
+			coef_B = B;
+		    if(coef_B>=0)
+			    cout << "A equação da sua reta é: y = "<<coef_A<<"x + "<<coef_B<< endl;
+			 else{
+			    coef_B = -coef_B;
+			    cout << "A equação da sua reta é: y = "<<coef_A<<"x - "<<coef_B<< endl;
+			 }
+		}
+		void calculaY(int x1, int x2){
+			for(int i = x1; i<= x2 ; i++){
+				cout << "Para x = "<< i << ", y = " << coef_A*i + coef_B<< endl;
+			}				
+		}
+	private:	
+		int coef_A, coef_B;
+};
+
+int main(){
+    int coefA, coefB;
+	cout << "Sabemos que a equação da reta é dada por y = Ax + B." << endl;
+	cout << "Digite um valor inteiro correspondente ao coeficiente A: ";
+	cin >> coefA;
+	cout << "Digite um valor inteiro correspondente ao coeficiente B: ";
+	cin >> coefB;
+	EquacaoReta reta(coefA,coefB);
+	
+	int x1,x2;
+	cout << "Digite intervalo inicial: ";
+	cin >> x1;
+	cout << "Digite intervalo final: ";
+	cin >> x2;
+	reta.calculaY(x1,x2);
+	
+	while (1);
+	return 0;
+}
+```
